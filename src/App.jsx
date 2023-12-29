@@ -3,7 +3,6 @@ import AppLayout from "./ui/AppLayout";
 import Home from "./ui/Home";
 import ErrorMessage from "./ui/ErrorMessage";
 import Shop from "./features/products/Shop";
-// import Cart from "./features/cart/Cart";
 import Wishlist from "./features/favorites/Wishlist";
 import ProductDetails from "./features/products/ProductDetails";
 import { loader as ProductLoader } from "./features/products/ProductList";
