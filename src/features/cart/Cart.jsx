@@ -20,7 +20,7 @@ function Cart({ handleOpenModal }) {
   );
   const reactStrapiKey = import.meta.env.VITE_REACT_APP_STRAPI_APP_KEY;
   const modifyStrapiKey = `bearer ${reactStrapiKey}`;
-
+  const backendURL = import.meta.env.VITE_REACT_APP_BACKEND_URL;
   function handleClearCart() {
     dispatch(clearCart());
   }
@@ -30,7 +30,7 @@ function Cart({ handleOpenModal }) {
       const requestBody = {
         products: cartData,
       };
-      const res = await fetch(`http://localhost:1337/api/orders`, {
+      const res = await fetch(`${backendURL}/api/orders`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
