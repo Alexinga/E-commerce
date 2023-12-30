@@ -11,6 +11,8 @@ export async function getStoreAPI(url) {
   try {
     const res = await fetch(`${backendURL}/api/${url}?populate=*`, params);
     // console.log(res);
+    if (!res.ok)
+      throw new Error(`Network Response was not good: ${res.status}`);
     const data = await res.json();
     // console.log(data);
     const productData = data.data;
