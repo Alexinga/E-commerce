@@ -29,6 +29,8 @@ export async function getSelectedProductAPI(id) {
       `${backendURL}/api/products?populate=*&[filters][id]=${id}`,
       params
     );
+    if (!res.ok)
+      throw new Error(`Network Response was not good: ${res.status}`);
     const data = await res.json();
     // const selectedData = data.data[0];
     const selectedData = data.data[0].attributes;
@@ -62,6 +64,8 @@ export async function getSelectedCategoryAPI(id) {
       `${backendURL}/api/categories/${id}?populate=products.img`,
       params
     );
+    if (!res.ok)
+      throw new Error(`Network Response was not good: ${res.status}`);
     // const res = await fetch(
     //   `${backendURL}/api/categories/${categoryId}?populate=*`,
     //   params
