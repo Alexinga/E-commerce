@@ -32,10 +32,6 @@ const router = createBrowserRouter([
         loader: SelectedItemLoader,
         errorElement: <ErrorMessage />,
       },
-      // {
-      //   path: "/cart",
-      //   element: <Cart />,
-      // },
       {
         path: "/favorite",
         element: <Wishlist />,
