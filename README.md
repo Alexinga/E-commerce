@@ -1,8 +1,14 @@
-# React + Vite
+Kiwi E-commerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I created an E-commerce store using React.js, Redux, React Router, TailwindCss, Strapi CMS, Stripe Payment Gateway API.
 
-Currently, two official plugins are available:
+In the app you are available:
+-Place an Order
+-Save products into you wishlist page.
+-Click on items to see description
+-Add to cart to checkout
+-Filter for specific products on category page.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+https://kiwi-tech.netlify.app/
+![kiwi-full](https://github.com/Alexinga/E-commerce/assets/46765771/4b1621aa-f5ef-4814-a56e-5aa1532e8059)
+
