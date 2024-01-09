@@ -4,12 +4,13 @@ import { deleteFav } from "../favorites/favoriteSlice";
 
 function ProductItem({ dataItem, wishItem }) {
   const backendURL = import.meta.env.VITE_REACT_APP_BACKEND_URL;
+  console.log(dataItem);
   const productImg = dataItem?.attributes?.img?.data[0]?.attributes?.url;
   const productImgAlt = dataItem?.attributes?.img?.data[0]?.attributes?.name;
   const wishListImg = wishItem?.img?.data[0]?.attributes?.url;
-  const cloudinaryURL = "https://res.cloudinary.com/dwuspgeuq/image";
-  const imgSrc = `${cloudinaryURL}${productImg}`;
-  const wishListSrc = `${cloudinaryURL}${wishListImg}`;
+  // const cloudinaryURL = "https://res.cloudinary.com/dwuspgeuq/image";
+  const imgSrc = `${productImg}`;
+  const wishListSrc = `${wishListImg}`;
   // const imgSrc = `${backendURL}${productImg}`;
   // const wishListSrc = `${backendURL}${wishListImg}`;
   const wishListImgAlt = wishItem?.title;

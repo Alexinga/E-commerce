@@ -9,8 +9,8 @@ import {
 function CartContent({ item }) {
   const backendURL = import.meta.env.VITE_REACT_APP_BACKEND_URL;
   const cartImg = item.img.data[0].attributes.url;
-  const cloudinaryURL = "https://res.cloudinary.com/dwuspgeuq/image";
-  const cartSrc = `${cloudinaryURL}${cartImg}`;
+  // const cloudinaryURL = "https://res.cloudinary.com/dwuspgeuq/image";
+  const cartSrc = `${cartImg}`;
   // const cartSrc = `${backendURL}${cartImg}`;
   const dispatch = useDispatch();
   const currentQuantity = useSelector(getCurrentQuantityById(item.id));
