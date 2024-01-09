@@ -18,7 +18,6 @@ function ProductDetailsContent() {
   // const cloudinaryURL = "https://res.cloudinary.com/dwuspgeuq/image";
   // const selectSrc = `${backendURL}${selectImg}`;
   const selectSrc = `${selectImg}`;
-  console.log(selectedID);
   const dispatch = useDispatch();
   const urlId = parseInt(useParams().selectId);
   const wishList = useSelector(getFavorite);
