@@ -7,8 +7,11 @@ function ProductItem({ dataItem, wishItem }) {
   const productImg = dataItem?.attributes?.img?.data[0]?.attributes?.url;
   const productImgAlt = dataItem?.attributes?.img?.data[0]?.attributes?.name;
   const wishListImg = wishItem?.img?.data[0]?.attributes?.url;
-  const imgSrc = `${backendURL}${productImg}`;
-  const wishListSrc = `${backendURL}${wishListImg}`;
+  const cloudinaryURL = "https://res.cloudinary.com/dwuspgeuq/image";
+  const imgSrc = `${cloudinaryURL}${productImg}`;
+  const wishListSrc = `${cloudinaryURL}${wishListImg}`;
+  // const imgSrc = `${backendURL}${productImg}`;
+  // const wishListSrc = `${backendURL}${wishListImg}`;
   const wishListImgAlt = wishItem?.title;
   const dispatch = useDispatch();
   function deleteWishlistItem() {

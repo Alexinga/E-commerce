@@ -15,7 +15,10 @@ function ProductDetailsContent() {
   const backendURL = import.meta.env.VITE_REACT_APP_BACKEND_URL;
   const selectImg = selectedID.img.data[0].attributes.url;
   const selectImgAlt = selectedID.img.data[0].attributes.name;
-  const selectSrc = `${backendURL}${selectImg}`;
+  const cloudinaryURL = "https://res.cloudinary.com/dwuspgeuq/image";
+  // const selectSrc = `${backendURL}${selectImg}`;
+  const selectSrc = `${cloudinaryURL}${selectImg}`;
+  // console.log(selectSrc);
   const dispatch = useDispatch();
   const urlId = parseInt(useParams().selectId);
   const wishList = useSelector(getFavorite);
