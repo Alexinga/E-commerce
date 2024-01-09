@@ -1,6 +1,6 @@
 Kiwi E-commerce
 
-I created an E-commerce store using React.js, Redux, React Router, TailwindCss, Strapi CMS, Stripe Payment Gateway API.
+I created an E-commerce store using React.js, Redux, React Router, TailwindCss, Strapi CMS, Stripe Payment Gateway API. I deployed the backend of the site on Heroku and on the frontend I used Netlify. Along with cms images I used a provider called Cloudinary
 
 In the app you are available:
 -Place an Order
